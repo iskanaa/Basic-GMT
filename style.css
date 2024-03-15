@@ -245,6 +245,7 @@ flex-direction:column;
 }
 
 }
+
    
   
   
@@ -346,9 +347,44 @@ font-size: 2rem;
     justify-content: center;
   }
 }
+  .offer{
+    background:grey;
+  background: var(--light);  
+  height: 90vh;
+  }
+.offer__text h2{
+  color: #134A8C;
+  font-size: 5rem;
+  font-weight:600;
+  margin: top;
+  flex-direction: column;
   
 
+}
+.offer__text p{
+  font-weight: 600;
+  justify-content: flex-end;
+  text-align: left;
+  width: 100%;
+  padding-right: 10%;
+margin: 3rem;
+  
+}
 
+
+
+.offer__wrapper{
+  display: flex;
+  position: absolute;
+  transform: translateY(15rem);
+  background-position-x:center;
+
+
+}
+.offer__price h3{
+font-size: 3rem;
+color: yellow;
+}
 
 
 /*REPEATABLE PATTERNS*/
@@ -382,3 +418,5 @@ font-size: 2rem;
   font-size: 1.5rem;
   font-weight: 600;
 }
+.btn.bg--primary{
+  background:var(--primary)
