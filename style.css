@@ -317,80 +317,93 @@ font-size: 2rem;
   gap: 3rem;
 }
 @media screen and (max-width:510px){
-  .banner__text h1{
-    font-size: 4rem;
-    text-align: center;
-  }
-  .banner__text p{
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-  }
-  .banner__text ul.dutdot{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-  }
-  .banner__text ul.dutdot li a{
-    width: 80%;
-  }
-  .banner__text ul.social{
-    justify-content: center;
-  }
-  .banner__faq{
-    width: 100%;
-    border-top-left-radius: 0rem;
-    text-align: center;
-  }
-  .banner__faq a{
-    justify-content: center;
-  }
-}
-  .offer{
-    background:grey;
-  background: var(--light);  
-  height: 70vh;
-  }
-.offer__text h2{
-  color: #134A8C;
-  font-size: 5rem;
-  font-weight:600;
-  margin: top;
-  flex-direction: column;
-  
-
-}
-.offer__text p{
+.offer h2{
+  font-size: 4rem;
+text-align: center;
+ }
+ .offer__text h2{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  display: block;
+  justify-content: center;
+ }
+ .offer__text p{
+  font-size: 1.4rem;
   font-weight: 600;
-  justify-content: flex-end;
   text-align: left;
-  width: 100%;
-  padding-right: 10%;
-margin: 3rem;
-  
 }
-
-
 
 .offer__wrapper{
+  grid-template-columns: none;
+  transform: translateY(1rem);
+}
+.offer__text ul.dutdot li a{
+  width: 80%;
+}
+.offer__text ul.social{
+  justify-content: center;
+}
+
+ .offer__faq{
+  width: 100%;
+  border-top-left-radius:0rem ;
+}
+.offer__faq a{
+  justify-content: center;
+align-items: flex-end;
+}
+}
+
+/* OFFER */
+.offer{
+  padding: 5rem 0;
+}
+.offer__wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10rem;
+}
+.offer__text h2{
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 3rem;
+}
+.offer__text p{
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: justify;
+  max-width: 60rem;
+}
+.offer__price {
+  margin-top: 10rem;
+}
+.offer__price h2{
+  font-size: 3rem;
+  font-weight: 700;
+  color: orange;
+}
+.offer__price__bot{
   display: flex;
-  position: absolute;
-  transform: translateY(15rem);
-  background-position-x:center;
-
-
+  color: var(--primary);
+  font-weight: 700;
 }
-.offer__price h3{
-font-size: 3rem;
-color: yellow;
+.offer__price__bot h4{
+  font-size: 3rem;
+  color: orange;
 }
+.offer__price__bot h3{
+  font-size: 18rem;
+  margin-top: -6rem;
+}
+
 @media screen and (max-width:510px){
   .offer__text h2{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    display: block;;
+    display: block;
     justify-content: center;
   }
 }
@@ -403,7 +416,7 @@ color: yellow;
 }
 .how__wrapper{
   display:grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns:2fr 2fr;
   min-height: 500px;
 }
 .how__ate{
@@ -447,6 +460,93 @@ color: yellow;
     text-align: center;
   }
 }
+/* RECOMMENDED */
+
+.recommend{
+  padding: 5rem 0;
+}
+.recommend .recommend__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recommend .recommend__wrapper h2{
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 3rem;
+line-height: 1;
+}
+.recommend .recommend__wrapper p{
+  margin-bottom: 3rem;
+}
+.recommend .recommend__wrapper ul{
+  display: flex;
+  gap: 2rem;
+}
+/*footer */
+.footer{
+  background: var(--primary);
+  min-height: 300px;
+
+}
+.footer__nav ul.nav {
+  height: 100px;
+  display: flex;
+  gap: 2rem;
+
+}
+.footer__text{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6rem;
+  text-align: center;
+  gap: 3rem;
+  color: var(--light);
+
+}
+@media screen and (max-width:510px){
+  .footer{
+    background: var(--primary);
+    height: 50vh;
+  }
+  .footer__nav a {
+    font-size: 1.5rem;
+    color: var(--light);
+    flex-direction: column;
+    display: block;
+    gap: 3px;
+    text-align: right;
+    width: fit-content;
+    padding: 1rem;
+    margin: 0 auto;
+}
+.footer__nav p {
+    margin-top: 2rem;
+    color: var(--light);
+    font-size: 1.5rem;
+}
+.footer__nav ul.social a {
+    display: flex;
+    align-items: center;
+}
+.footer__nav ul.social li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+    color: var(--light);
+    padding: 1rem;
+    margin: 0 auto;
+    justify-content: center center;
+}
+}
+  
+
+ 
 /*REPEATABLE PATTERNS*/
 
 :root{
